@@ -1,34 +1,35 @@
 hound = require('hound');
+logger = require('./logger.js')
 watcher = {};
 
 module.exports = {
     setup: function (path) {
-        console.log('Setting up Overseer...');
+        logger.info('Setting up File Watcher...')
         watcher = hound.watch(path);
 
         watcher.on('create', function (file, stats) {
             try {
-                console.log(file + ' was created');
+                logger.log(file + ' was created');
             }
             catch (e) {
-                console.log('create error', e)
+                logger.error('create error', e)
             }
         })
-        
+
         watcher.on('change', function (file, stats) {
             try {
-                console.log(file + ' was changed')
+                logger.log(file + ' was changed')
             }
             catch (e) {
-                console.log('change error', e)
+                logger.error('change error', e)
             }
         })
         watcher.on('delete', function (file) {
             try {
-                console.log(file + ' was deleted')
+                logger.log(file + ' was deleted')
             }
             catch (e) {
-                console.log('delete error', e)
+                logger.error('delete error', e)
             }
         })
     },

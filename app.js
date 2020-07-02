@@ -1,3 +1,4 @@
-ov = require('./business.logic/file_watcher.js');
-
-ov.setup('./drop_location');
+logger = require('./business.logic/logger.js');
+logger.info('Starting Overseer...');
+oversee = require('./business.logic/file_watcher.js');
+oversee.setup('./drop_location');

@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "hound": "^1.0.5"
+    "hound": "^1.0.5",
+    "simple-node-logger": "^18.12.24"
   },
   "devDependencies": {},
   "scripts": {
