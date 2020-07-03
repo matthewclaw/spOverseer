@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "hound": "^1.0.5",
-    "simple-node-logger": "^18.12.24"
+    "simple-node-logger": "^18.12.24",
+    "uniqid": "^5.2.0"
   },
   "devDependencies": {},
   "scripts": {
