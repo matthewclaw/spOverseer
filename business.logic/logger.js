@@ -18,6 +18,9 @@ module.exports = {
     error: function (data) {
         log.error(data)
         console.error(data)
+    },
+    log: function (data) {
+        this.info(data)
     }
 
 }

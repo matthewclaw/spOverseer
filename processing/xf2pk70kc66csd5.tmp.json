@@ -1,0 +1,35 @@
+{
+    "Phases": [
+        {
+            "voltage": 499.85,
+            "Current": 145.621,
+            "PF_corrected_for": 0.8001,
+            "PF_currently": 0.01,
+            "Power_usage": 658.259,
+            "VAH_used_this_month_to_date": 25443.21,
+            "VAH_saved_this_month_to_date": 52315.322
+        },
+        {
+            "voltage": 499.85,
+            "Current": 145.621,
+            "PF_corrected_for": 0.8001,
+            "PF_currently": 0.01,
+            "Power_usage": 658.259,
+            "VAH_used_this_month_to_date": 25443.21,
+            "VAH_saved_this_month_to_date": 52315.322
+        },
+        {
+            "voltage": 499.85,
+            "Current": 145.621,
+            "PF_corrected_for": 0.8001,
+            "PF_currently": 0.01,
+            "Power_usage": 658.259,
+            "VAH_used_this_month_to_date": 25443.21,
+            "VAH_saved_this_month_to_date": 52315.322
+        }
+    ],
+    "error": [],
+    "system_state": " operational'",
+    "Data_uplaoded": false,
+    "Serial_number_of_device": " RSA-000-001'"
+}

@@ -1,7 +1,7 @@
 system_state: 'operational'
 errors: 'none'
 Data_uplaoded: True/False
-Sreial_number_of_device: 'RSA-000-001' 
+Serial_number_of_device: 'RSA-000-001' 
 
 Phase: 1
 voltage: 499.850000

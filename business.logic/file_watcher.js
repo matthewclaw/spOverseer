@@ -1,6 +1,7 @@
 hound = require('hound');
 logger = require('./logger.js')
 watcher = {};
+fp = require('./file_processer.js')
 
 module.exports = {
     setup: function (path) {
@@ -9,27 +10,21 @@ module.exports = {
 
         watcher.on('create', function (file, stats) {
             try {
-                logger.log(file + ' was created');
+                logger.info(file + ' was created');
+                fp.process(file);
             }
             catch (e) {
-                logger.error('create error', e)
+                logger.error('create error:' + e)
             }
         })
 
         watcher.on('change', function (file, stats) {
             try {
-                logger.log(file + ' was changed')
+                logger.info(file + ' was changed')
+                fp.process(file)
             }
             catch (e) {
-                logger.error('change error', e)
-            }
-        })
-        watcher.on('delete', function (file) {
-            try {
-                logger.log(file + ' was deleted')
-            }
-            catch (e) {
-                logger.error('delete error', e)
+                logger.error('change error:' + e)
             }
         })
     },
