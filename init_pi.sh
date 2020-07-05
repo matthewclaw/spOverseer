@@ -1,5 +1,5 @@
 echo "Cloning master"
-git clone --single-branch --branch "master" https://github.com/matthewclaw/mjmOverseer.git
+git clone --single-branch --branch "master" https://github.com/matthewclaw/spOverseer.git
 chmod ugo+wrx -R mjmOverseer
 cd mjmOverseer
 sudo apt-get update

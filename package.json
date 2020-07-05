@@ -1,5 +1,5 @@
 {
-  "name": "mjmoverseer",
+  "name": "spoverseer",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthewclaw/mjmOverseer.git"
+    "url": "git+https://github.com/matthewclaw/spOverseer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matthewclaw/mjmOverseer/issues"
+    "url": "https://github.com/matthewclaw/spOverseer/issues"
   },
-  "homepage": "https://github.com/matthewclaw/mjmOverseer#readme"
+  "homepage": "https://github.com/matthewclaw/spOverseer#readme"
 }
