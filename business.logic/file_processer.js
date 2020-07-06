@@ -2,7 +2,6 @@ fs = require('fs');
 logger = require('./logger.js');
 axios = require('axios').default;
 config = require('config');
-querystring = require('querystring');
 
 getPlainValue = (line) => {
     let valsplit = line.split(':');
@@ -111,7 +110,7 @@ removeTmp = (name) => {
 sendData = (data, tmpName) => {
     logger.info('sending data...');
     server = config.get('server');
-    axios.post(server, querystring.stringify(data))
+    axios.post(server, data)
         .then((response) => {
             if (response.status === 200) {
                 logger.info(`Data has been sent to the server successfully.`);
