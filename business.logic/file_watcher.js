@@ -17,16 +17,6 @@ module.exports = {
                 logger.error('create error:' + e)
             }
         })
-
-        watcher.on('change', function (file, stats) {
-            try {
-                logger.info(file + ' was changed')
-                fp.process(file)
-            }
-            catch (e) {
-                logger.error('change error:' + e)
-            }
-        })
     },
     dispose: function () {
         watcher.clear();
