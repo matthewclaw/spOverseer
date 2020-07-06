@@ -104,7 +104,9 @@ writeTmp = (data) => {
 }
 removeTmp = (name) => {
     fs.unlink(name, (err) => {
-        logger.warn(`Could not Delete: '${name}' ERROR: `+ err);
+        if (err) {
+            logger.warn(`Could not Delete: '${name}' ERROR: ` + err);
+        }
     });
 }
 sendData = (data, tmpName) => {
