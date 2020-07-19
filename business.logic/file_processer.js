@@ -105,7 +105,7 @@ writeTmp = (data) => {
 removeTmp = (name) => {
     fs.unlink(name, (err) => {
         if (err) {
-            logger.warn(`Could not Delete: '${name}' ERROR: ` + err);
+            logger.warn(`Could not Delete Temporary File: '${name}' ERROR: ` + err);
         }
     });
 }
