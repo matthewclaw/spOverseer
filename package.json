@@ -9,7 +9,8 @@
     "hound": "^1.0.5",
     "querystring": "^0.2.0",
     "simple-node-logger": "^18.12.24",
-    "uniqid": "^5.2.0"
+    "uniqid": "^5.2.0",
+    "lodash": "^4.17.19"
   },
   "devDependencies": {},
   "scripts": {
